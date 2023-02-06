@@ -3,4 +3,9 @@ c'est à dire ajouter un camembert avec les proportion sde (joie, colère, altru
 
 test
 test etienne
+<<<<<<< HEAD
 test elise
+=======
+
+Camille est perdue 
+>>>>>>> c66e1163fb6326d0893936ec414dc16073d6b754
