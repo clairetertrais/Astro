@@ -1,0 +1,4 @@
+Amélioration 1 : rajouter des statistiques sur le tempérament de chacun des signes :
+c'est à dire ajouter un camembert avec les proportion sde (joie, colère, altruisme, sensibilité, etc...)
+
+test
