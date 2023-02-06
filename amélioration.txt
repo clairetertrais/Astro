@@ -3,11 +3,18 @@ c'est à dire ajouter un camembert avec les proportion sde (joie, colère, altru
 
 test
 test etienne
+<<<<<<< HEAD
+test elise
+=======
 
 Camille est perdue 
+<<<<<<< HEAD
+>>>>>>> c66e1163fb6326d0893936ec414dc16073d6b754
+=======
 <<<<<<< HEAD
 Non c'est pas vrai
 =======
 
 apo fais un essai
 >>>>>>> 93d4228c6d82b4690235b8157d3d90021305e8ae
+>>>>>>> 56296ab1c25ed53acd86e59a4263ea6bb7b66a15
