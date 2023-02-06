@@ -5,4 +5,9 @@ test
 test etienne
 
 Camille est perdue 
+<<<<<<< HEAD
 Non c'est pas vrai
+=======
+
+apo fais un essai
+>>>>>>> 93d4228c6d82b4690235b8157d3d90021305e8ae
