@@ -1,0 +1,7 @@
+1.Création du groupe pour le projet Astro
+2.Ajout des membres par Claire Tertrais sur le projet
+3.Visio collective afin de vérifier que l'ensemble du groupe gère la récupération des fichiers ainsi que le dépot de fichiers
+4.Début du codage sur le projet Astro : selon une date de naissance donner le signe astrologique
+5.Proposition d'améliorations par l'ensemble du groupe (exemple : donner quelques caractéristique sur le signe)
+6.Création du fichier Auteurs et ToDo
+7.Création d'un fichier avec la définition des signes astros
