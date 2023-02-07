@@ -5,7 +5,7 @@ Amélioration 2 : ajouter le signe lunaire ?
 
 Amélioration 3 : ajouter le signe chinois ? effectuer un cicle des années pour trouver l'animal correspondant à l'année de naissance.
 
-Amélioration 4 : Effectuer un horoscope de la journée pour le signe détecté, créer un lien externe vers un site qui fournit les horoscopes quotidiens.
+Amélioration 4 : Effectuer un horoscope de la journée pour le signe détecté, créer un lien externe vers un site qui fournit les horoscopes quotidiens. https://www.horoscope.fr
 
 Amélioration 5 : Recenser la proportion de son signe dans la population mondiale, exemple : je suis scorpion ... il y a 18% de scorpion dans la population mondiale, vous êtes le x signe le plus représenté dans le monde.
 
