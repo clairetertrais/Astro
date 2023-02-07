@@ -1,12 +1,12 @@
-VALAT Jeanne
-LEGROS Nolwenn
-FARGE Apolline
-BEDNAREK Camille
-TERTRAIS Claire
 BALME Constance
 BARTHELEMY Etienne
+BEDNAREK Camille
+BOURGUIGNON Elisa
 ECHARD Lucas
+FARGE Apolline
 GHESQUIER Océane
-Manon LE BLET
-Bourguignon Elisa
+LE BLET Manon
+LEGROS Nolwenn
 REYNIER Elise
+TERTRAIS Claire
+VALAT Jeanne
