@@ -9,13 +9,17 @@ ui <- fluidPage(
     ),
     mainPanel(
       textOutput("signe"),
-      h3("Description:"),
+      h1("Description:"),
       textOutput("description"),
+      h2("Ton signe chinois est :"),
+      textOutput("signe_chinois")
     )
   )
 )
 
 server <- function(input, output) {
+
+# Connaitre son sigen astro
   output$signe <- renderText({
     jour <- as.integer(format(input$date, "%d"))
     mois <- as.integer(format(input$date, "%m"))
@@ -49,6 +53,7 @@ server <- function(input, output) {
     paste("Votre signe astrologique est :", signe)
   })
   
+#  Avoir la description de son sigen astro
   output$description <- renderText({
     jour <- as.integer(format(input$date, "%d"))
     mois <- as.integer(format(input$date, "%m"))
@@ -79,6 +84,14 @@ server <- function(input, output) {
       description <- "Le signe astrologique des Poissons est le 12ème et dernier signe du zodiaque. Il est lié à l'élément eau. Ce signe se caractérise par sa générosité, sa sensibilité et son intuition. Son empathie peut l'amener à se montrer anxieux, fragile et indécis."
     }
     paste("", description)
+  })
+  
+#  connaitre son signe chinois
+  output$signe_chinois <- renderText({
+    signe_chinois <- c("Rat", "Buffle", "Tigre", "Lapin", "Dragon", "Serpent", "Cheval",
+                     "Chèvre", "Singe", "Coq", "Chien", "Cochon")
+    année <- as.integer(format(input$date, "%Y"))
+    output$signe_chinois <- renderText({signe_chinois[(année - 1900) %% 12 + 1]})
   })
 }
 
