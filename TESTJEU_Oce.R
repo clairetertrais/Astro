@@ -87,12 +87,37 @@ server <- function(input, output) {
   })
   
 #  connaitre son signe chinois
+  # Connaître son signe chinois
   output$signe_chinois <- renderText({
-    signe_chinois <- c("Rat", "Buffle", "Tigre", "Lapin", "Dragon", "Serpent", "Cheval",
-                     "Chèvre", "Singe", "Coq", "Chien", "Cochon")
-    année <- as.integer(format(input$date, "%Y"))
-    output$signe_chinois <- renderText({signe_chinois[(année - 1900) %% 12 + 1]})
+    annee <- as.integer(format(input$date, "%Y"))
+    signe_chinois <- ""
+    if ((annee - 1900) %% 12 == 0) {
+      signe_chinois <- "Rat"
+    } else if ((annee - 1900) %% 12 == 1) {
+      signe_chinois <- "Buffle"
+    } else if ((annee - 1900) %% 12 == 2) {
+      signe_chinois <- "Tigre"
+    } else if ((annee - 1900) %% 12 == 3) {
+      signe_chinois <- "Lapin"
+    } else if ((annee - 1900) %% 12 == 4) {
+      signe_chinois <- "Dragon"
+    } else if ((annee - 1900) %% 12 == 5) {
+      signe_chinois <- "Serpent"
+    } else if ((annee - 1900) %% 12 == 6) {
+      signe_chinois <- "Cheval"
+    } else if ((annee - 1900) %% 12 == 7) {
+      signe_chinois <- "Chèvre"
+    } else if ((annee - 1900) %% 12 == 8) {
+      signe_chinois <- "Singe"
+    } else if ((annee - 1900) %% 12 == 9) {
+      signe_chinois <- "Coq"
+    } else if ((annee - 1900) %% 12 == 10) {
+      signe_chinois <- "Chien"
+    } else if ((annee - 1900) %% 12 == 11) {
+      signe_chinois <- "Porc"
+    }
+    paste("Ton signe chinois est :", signe_chinois)
   })
+  
 }
-
 shinyApp(ui, server)
