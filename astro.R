@@ -11,6 +11,8 @@ ui <- fluidPage(
     ),
     mainPanel(
       textOutput("signe"),
+      h1("Description:"),
+      h2 ("Voici tes traits de caractères principaux :"),
       plotlyOutput("pie")
     )
   )
@@ -21,6 +23,7 @@ server <- function(input, output) {
   signe <- reactive({
     jour <- as.integer(format(input$date, "%d"))
     mois <- as.integer(format(input$date, "%m"))
+    signe <- ""
     if ((mois == 3 & jour >= 21) || (mois == 4 & jour <= 19)) {
       "Bélier"
     } else if ((mois == 4 & jour >= 20) || (mois == 5 & jour <= 20)) {
@@ -47,12 +50,10 @@ server <- function(input, output) {
       "Poissons"
     }
   })
+
   
-  
-  output$signe <- renderText({
-    paste("Votre signe astrologique est :", signe())
-  })
-  
+
+   
   output$pie <- renderPlotly({
     
     cara <- read.csv2("Tableau_qualités_signes.csv", sep=";")
