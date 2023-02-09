@@ -11,4 +11,6 @@ Amélioration 5 : Recenser la proportion de son signe dans la population mondial
 
 Amélioration 6 : Proposer une fiche identité qui suit le camembert de l'amélioration 1, c'est à dire une fiche avec les principales qualités et défauts de chaque signe.
 
+Amélioration 7 : Proposer la compatibilité amoureuse du signe 
+
 
