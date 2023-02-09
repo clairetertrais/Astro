@@ -66,7 +66,7 @@ server <- function(input, output) {
                          values = si, type = "pie")
     
   })
-  
+   
   
 }
 
