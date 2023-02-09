@@ -55,10 +55,10 @@ server <- function(input, output) {
   
   output$pie <- renderPlotly({
     
-    cara <- read.csv2("caracteristiques.csv", sep=";")
+    cara <- read.csv2("Tableau_qualités_signes.csv", sep=";")
     
     x <- cara[cara$signe==signe(), ]
-    si <- unlist(x[2:3])
+    si <- unlist(x)
     
     # Graphique
     camembert <- plot_ly(labels = names(si), 
