@@ -1,8 +1,5 @@
 Amélioration 1 : rajouter des statistiques sur le tempérament de chacun des signes :
-c'est à dire ajouter un camembert avec les proportion sde (joie, colère, altruisme, sensibilité en focntion du signe, etc...)
-
-lllllll
-
+c'est à dire ajouter un camembert avec les proportion sde (joie, colère, altruisme, sensibilité en focntion du signe, etc...) Peut être qu'on diagramme baton serait mieux adapté.
 
 Amélioration 2 : ajouter le signe lunaire ? 
 
@@ -13,23 +10,5 @@ Amélioration 4 : Effectuer un horoscope de la journée pour le signe détecté,
 Amélioration 5 : Recenser la proportion de son signe dans la population mondiale, exemple : je suis scorpion ... il y a 18% de scorpion dans la population mondiale, vous êtes le x signe le plus représenté dans le monde.
 
 Amélioration 6 : Proposer une fiche identité qui suit le camembert de l'amélioration 1, c'est à dire une fiche avec les principales qualités et défauts de chaque signe.
-
-test
-test etienne
-<<<<<<< HEAD
-test elise
-=======
-
-Camille est perdue 
-<<<<<<< HEAD
->>>>>>> c66e1163fb6326d0893936ec414dc16073d6b754
-=======
-<<<<<<< HEAD
-Non c'est pas vrai
-=======
-
-apo fais un essai
->>>>>>> 93d4228c6d82b4690235b8157d3d90021305e8ae
->>>>>>> 56296ab1c25ed53acd86e59a4263ea6bb7b66a15
 
 
