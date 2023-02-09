@@ -13,7 +13,7 @@ ui <- fluidPage(
       textOutput("signe"),
       h1("Description:"),
       textOutput("description"),
-      h2("Ton signe chinois est :"),
+      h2("Signe Chinois :"),
       textOutput("signe_chinois"),
       h3 ("Voici tes traits de caractères principaux :"),
       plotlyOutput("pie")
@@ -88,8 +88,9 @@ server <- function(input, output) {
     paste("", description)
   })
   
-  #  connaitre son signe chinois
+
   # Connaître son signe chinois
+  
   output$signe_chinois <- renderText({
     annee <- as.integer(format(input$date, "%Y"))
     signe_chinois <- ""
