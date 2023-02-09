@@ -15,6 +15,7 @@ ui <- fluidPage(
       textOutput("description"),
       h2("Ton signe chinois est :"),
       textOutput("signe_chinois"),
+      h3 ("Voici tes traits de caractères principaux :"),
       plotlyOutput("pie")
     )
   )
@@ -54,7 +55,7 @@ server <- function(input, output) {
     paste("Votre signe astrologique est :", signe)
   })
   
-  #  Avoir la description de son sigen astro
+  #  Avoir la description de son signe astro
   output$description <- renderText({
     jour <- as.integer(format(input$date, "%d"))
     mois <- as.integer(format(input$date, "%m"))
@@ -133,7 +134,6 @@ server <- function(input, output) {
                          values = si, type = "pie")
     
   })
-  
   
 }
 
