@@ -6,11 +6,11 @@ ui <- fluidPage(
   titlePanel("Tout savoir sur soi grâce à sa date de naissance !"),
   sidebarLayout(
     sidebarPanel(
-      dateInput("date", "Entrez votre date de naissance :", value = Sys.Date(), format = "dd/mm/yy"),
+      dateInput("date", "Entrez votre date de naissance :", value = Sys.Date(), format = "dd/mm/yyyy"),
       submitButton("Continuez")
     ),
     mainPanel(
-      textOutput("signe"),
+      textOutput("signeastro"),
       h1("Description:"),
       textOutput("description"),
       h2("Signe Chinois :"),
@@ -26,34 +26,36 @@ server <- function(input, output) {
   signe <- reactive({
     jour <- as.integer(format(input$date, "%d"))
     mois <- as.integer(format(input$date, "%m"))
-    signe <- ""
     if ((mois == 3 & jour >= 21) || (mois == 4 & jour <= 19)) {
-      signe <- "Bélier"
+       "Bélier"
     } else if ((mois == 4 & jour >= 20) || (mois == 5 & jour <= 20)) {
-      signe <- "Taureau"
+       "Taureau"
     } else if ((mois == 5 & jour >= 21) || (mois == 6 & jour <= 20)) {
-      signe <- "Gémeaux"
+       "Gémeaux"
     } else if ((mois == 6 & jour >= 21) || (mois == 7 & jour <= 22)) {
-      signe <- "Cancer"
+       "Cancer"
     } else if ((mois == 7 & jour >= 23) || (mois == 8 & jour <= 22)) {
-      signe <- "Lion"
+       "Lion"
     } else if ((mois == 8 & jour >= 23) || (mois == 9 & jour <= 22)) {
-      signe <- "Vierge"
+       "Vierge"
     } else if ((mois == 9 & jour >= 23) || (mois == 10 & jour <= 22)) {
-      signe <- "Balance"
+       "Balance"
     } else if ((mois == 10 & jour >= 23) || (mois == 11 & jour <= 21)) {
-      signe <- "Scorpion"
+       "Scorpion"
     } else if ((mois == 11 & jour >= 22) || (mois == 12 & jour <= 21)) {
-      signe <- "Sagittaire"
+       "Sagittaire"
     } else if ((mois == 12 & jour >= 22) || (mois == 1 & jour <= 19)) {
-      signe <- "Capricorne"
+       "Capricorne"
     } else if ((mois == 1 & jour >= 20) || (mois == 2 & jour <= 18)) {
-      signe <- "Verseau"
+       "Verseau"
     } else if ((mois == 2 & jour >= 19) || (mois == 3 & jour <= 20)) {
-      signe <- "Poissons"
+       "Poissons"
     }
-    paste("Votre signe astrologique est :", signe)
   })
+  
+  output$signeastro <- renderText({
+    paste ("Votre signe astrologique est : ", signe())
+    })
   
   #  Avoir la description de son signe astro
   output$description <- renderText({
@@ -128,7 +130,9 @@ server <- function(input, output) {
     cara <- read.csv2("Tableau_qualités_signes.csv", sep=";")
     
     x <- cara[cara$signe==signe(), ]
+   # x <- cara[cara$signe=="Cancer", ] #pour débug
     si <- unlist(x)
+    si <- si[si != 0]
     
     # Graphique
     camembert <- plot_ly(labels = names(si), 
