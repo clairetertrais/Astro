@@ -1,4 +1,5 @@
 library(shiny)
+install.packages("plotly")
 library(plotly)
 
 ui <- fluidPage(
