@@ -1,1 +1,0 @@
-    paste("Votre signe astrologique est :", signe)
