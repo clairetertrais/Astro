@@ -16,6 +16,6 @@ cara <- data.frame(cara)
 #si <- data.frame(si)
 
 
-radarchart(cara,  axistype = 2) #problème car les valeurs ne sont pas considérées comme numériques. 
+radarchart(cara,  axistype = 2, cglty = 3, title = "Diagramme en radar") #problème car les valeurs ne sont pas considérées comme numériques. 
 #Essai de faire passer en data.frame mais pas concluant
 #Tentative échouée 
