@@ -1,5 +1,5 @@
 library(shiny)
-
+  
 ui <- fluidPage(
   titlePanel("Tout savoir sur soi grâce à sa date de naissance !"),
   sidebarLayout(
