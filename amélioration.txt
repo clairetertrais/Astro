@@ -13,4 +13,6 @@ Amélioration 6 : Proposer une fiche identité qui suit le camembert de l'améli
 
 Amélioration 7 : Proposer la compatibilité amoureuse du signe 
 
+Amélioration 8 : Créer une interface cohérente au niveau graphique, un peu moins "brute" que celle à l'heure actuelle.
 
+Amélioration 9 : Faire un graphique plus adapté au fait de présenter des traits de personnalité : diagramme baton ou diagramme toile d'araignée.
