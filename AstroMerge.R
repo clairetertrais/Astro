@@ -133,7 +133,7 @@ server <- function(input, output) {
     # Graphique
     camembert <- plot_ly(labels = names(si), 
                          values = si, type = "pie")
-    
+    # 
   })
   
 }
