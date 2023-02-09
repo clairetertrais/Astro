@@ -28,7 +28,6 @@ server <- function(input, output) {
     signe <- ""
     if ((mois == 3 & jour >= 21) || (mois == 4 & jour <= 19)) {
       signe <- "Bélier"
-      description <- "Le Bélier est le 1er signe du zodiaque. Il est rattaché à l'élément feu. C'est un signe d'énergie et d'enthousiasme. Le bélier fait preuve d'initiative, d'audace et d'ambition. Il est indépendant, direct et fait preuve de combativité. Il peut parfois se montrer peu diplomate et agressif."
     } else if ((mois == 4 & jour >= 20) || (mois == 5 & jour <= 20)) {
       signe <- "Taureau"
     } else if ((mois == 5 & jour >= 21) || (mois == 6 & jour <= 20)) {
