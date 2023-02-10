@@ -160,7 +160,7 @@ server <- function(input, output) {
     
   
   output$radar <- renderPlot({
-    cara <- read.csv2("Tableau_qualités_signes.csv", sep=";")
+    cara <- read.csv2("../Data/Tableau_qualités_signes.csv", sep=";")
     x <- cara[which(cara$signe %in% signe), ]
     x <- x[, colSums(x == 0) == 0]
     x <- x[, -1]

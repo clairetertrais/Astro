@@ -55,7 +55,7 @@ server <- function(input, output) {
   
   output$pie <- renderPlotly({
     
-    cara <- read.csv2("Tableau_qualités_signes.csv", sep=";")
+    cara <- read.csv2("../Data/Tableau_qualités_signes.csv", sep=";")
     
     x <- cara[cara$signe==signe(), ]
     si <- unlist(x)

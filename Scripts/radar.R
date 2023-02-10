@@ -1,6 +1,6 @@
 library(fmsb)
 
-cara <- read.csv2("Tableau_qualités_signes.csv", sep=";")
+cara <- read.csv2("../Data/Tableau_qualités_signes.csv", sep=";")
 signe <- "Poissons"
 x <- cara[cara$signe == signe, ]
 x <- x[, colSums(x == 0) == 0]
