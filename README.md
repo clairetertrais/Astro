@@ -13,15 +13,21 @@ L'application Shiny permet à l'utilisateur de :
 
 -   Connaître son signe astrologique
 
--   Avoir une description de son signe astrologique (fonctionnalité à venir)
+-   Avoir une description de son signe astrologique
+
+-   Connaitre son signe Chinois
+
+-   Avoir un aperçu de sa compatibilité amoureuse avec les autres signes
+
+-   Visualier à l'aide d'un graphique les principaux traits de caractères de son signe
 
 ## **Utilisation**
 
-Pour utiliser l'application, il suffit de lancer le fichier **`app.R`** dans R ou RStudio. L'interface utilisateur permettra alors de saisir la date de naissance et d'afficher le signe astrologique correspondant.
+Pour utiliser l'application, il suffit de lancer le fichier **`ApplicationFinale`** dans R ou RStudio. L'interface utilisateur permettra alors de saisir la date de naissance et d'afficher les informations correspondantes.
 
 ## **Développement futur**
 
-Le développement futur de l'application inclura la possibilité pour l'utilisateur d'avoir une description détaillée de son signe astrologique.
+Le développement futur de l'application inclura la possibilité pour l'utilisateur d'avoir A COMPLETER
 
 Nous espérons que cette application sera utile et intéressante pour les utilisateurs dans le cadre de l'optionnelle OPEN.
 
