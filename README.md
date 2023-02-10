@@ -33,4 +33,4 @@ Nous espérons que cette application sera utile et intéressante pour les utilis
 
 ## **Collaborateurs**
 
-Vous pouvez retrouver tous les collaborateurs qui ont travaillé sur ce projet sur le lien suivant : https://github.com/clairetertrais/Astro/blob/main/AuteursDuProjet.txt
+Vous pouvez retrouver tous les collaborateurs qui ont travaillé sur ce projet sur le lien suivant : https://github.com/clairetertrais/Astro/blob/main/NotesTXT/AuteursDuProjet.txt
