@@ -23,7 +23,7 @@ L'application Shiny permet à l'utilisateur de :
 
 ## **Utilisation**
 
-Pour utiliser l'application, il suffit de lancer le fichier **`ApplicationFinale`** dans R ou RStudio. L'interface utilisateur permettra alors de saisir la date de naissance et d'afficher les informations correspondantes.
+Pour utiliser l'application, il suffit de lancer le fichier **`ApplicationAstroFinale`** dans R ou RStudio. L'interface utilisateur permettra alors de saisir la date de naissance et d'afficher les informations correspondantes.
 
 ## **Développement futur**
 
