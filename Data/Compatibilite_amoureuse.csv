@@ -1,1 +1,13 @@
-
+signe ;Meilleur Compatibilité;Bonne Compatibilité;Peut marcher
+Bélier ;Sagittaire ;Taureau;Lion
+Taureau;Capricorne;Scorpion;Bélier
+Gémeaux;Gémeaux;Vierge;Sagittaire
+Cancer ;Lion;Vierge;Capricorne
+Lion ;Sagittaire ;Balance;Bélier
+Vierge;Capricorne;Taureau;Cancer
+Balance;Lion;Taureau;Bélier
+Scorpion;Cancer;Taureau;Capricorne
+Sagittaire;Lion;Bélier;Gémeaux
+Capricorne;Capricorne;Taureau;Scorpion
+Verseau;Sagittaire ;Verseau;Scorpion
+Poissons;Scorpion;Cancer;Vierge
