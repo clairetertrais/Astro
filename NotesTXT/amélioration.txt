@@ -1,9 +1,8 @@
-Amélioration 1 : rajouter des statistiques sur le tempérament de chacun des signes :
-c'est à dire ajouter un camembert avec les proportion sde (joie, colère, altruisme, sensibilité en focntion du signe, etc...) Peut être qu'on diagramme baton serait mieux adapté.
+Amélioration 1 : rajouter des statistiques sur le tempérament de chacun des signes : c'est à dire ajouter un camembert avec les proportion sde (joie, colère, altruisme, sensibilité en focntion du signe, etc...) Peut être qu'on diagramme baton serait mieux adapté. FAIT
 
 Amélioration 2 : ajouter le signe lunaire ? 
 
-Amélioration 3 : ajouter le signe chinois ? effectuer un cicle des années pour trouver l'animal correspondant à l'année de naissance.
+Amélioration 3 : ajouter le signe chinois ? effectuer un cycle des années pour trouver l'animal correspondant à l'année de naissance. FAIT
 
 Amélioration 4 : Effectuer un horoscope de la journée pour le signe détecté, créer un lien externe vers un site qui fournit les horoscopes quotidiens.
 
@@ -11,8 +10,8 @@ Amélioration 5 : Recenser la proportion de son signe dans la population mondial
 
 Amélioration 6 : Proposer une fiche identité qui suit le camembert de l'amélioration 1, c'est à dire une fiche avec les principales qualités et défauts de chaque signe.
 
-Amélioration 7 : Proposer la compatibilité amoureuse du signe 
+Amélioration 7 : Proposer la compatibilité amoureuse du signe  FAIT
 
 Amélioration 8 : Créer une interface cohérente au niveau graphique, un peu moins "brute" que celle à l'heure actuelle.
 
-Amélioration 9 : Faire un graphique plus adapté au fait de présenter des traits de personnalité : diagramme baton ou diagramme toile d'araignée.
+Amélioration 9 : Faire un graphique plus adapté au fait de présenter des traits de personnalité : diagramme baton ou diagramme toile d'araignée. FAIT
