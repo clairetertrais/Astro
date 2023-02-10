@@ -161,16 +161,19 @@ server <- function(input, output) {
   
   output$pie <- renderPlotly({
     
-    cara <- read.csv2("Tableau_qualités_signes.csv", sep=";")
+    cara <- read.csv2("Tableau_qualités_signes.csv", sep=";", row.names=1)
     
-    x <- cara[cara$signe==signe(), ]
-   # x <- cara[cara$signe=="Cancer", ] #pour débug
+    x <- cara[rownames(cara)==signe(), ]
+   #x <- cara[rownames(cara)=="Cancer", ] #pour débug on donne une valeur à signe
     si <- unlist(x)
-    si <- si[si != 0]
+    si <- si[si != 0] #on enlève tous les caractères à 0
     
     # Graphique
-    camembert <- plot_ly(labels = names(si), 
-                         values = si, type = "pie")
+    plot_ly(theta = names(si),
+            r = si,
+            type = "scatterpolar",
+            fill = 'toself'
+    )
     # 
   })
   
