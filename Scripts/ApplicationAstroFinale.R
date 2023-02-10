@@ -161,7 +161,7 @@ server <- function(input, output) {
   
   output$pie <- renderPlotly({
     
-    cara <- read.csv2("Tableau_qualités_signes.csv", sep=";", row.names=1)
+    cara <- read.csv2("../Data/Tableau_qualités_signes.csv", sep=";", row.names=1)
     
     x <- cara[rownames(cara)==signe(), ]
    #x <- cara[rownames(cara)=="Cancer", ] #pour débug on donne une valeur à signe
