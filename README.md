@@ -29,8 +29,6 @@ Pour utiliser l'application, il suffit de lancer le fichier **`ApplicationAstroF
 
 ## **Développement futur**
 
-Le développement futur de l'application inclura la possibilité pour l'utilisateur d'avoir A COMPLETER
-
 Nous espérons que cette application sera utile et intéressante pour les utilisateurs dans le cadre de l'optionnelle OPEN.
 
 Parmi les améliorations possibles à venir on pourrait notamment penser à :
