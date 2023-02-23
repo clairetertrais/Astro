@@ -29,7 +29,7 @@ server <- function(input, output) {
     } else if ((mois == 4 & jour >= 20) || (mois == 5 & jour <= 20)) {
       "Taureau"
     } else if ((mois == 5 & jour >= 21) || (mois == 6 & jour <= 20)) {
-      "Gémeaux"
+      "Gémeaux les best"
     } else if ((mois == 6 & jour >= 21) || (mois == 7 & jour <= 22)) {
       "Cancer"
     } else if ((mois == 7 & jour >= 23) || (mois == 8 & jour <= 22)) {
