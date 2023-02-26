@@ -7,7 +7,7 @@ ui <- fluidPage(
   sidebarLayout(
     sidebarPanel(
       dateInput("date", "Entrez votre date de naissance :", value = Sys.Date(), format = "dd/mm/yyyy"),
-      submitButton("Continuez")
+      submitButton("Continuez"),
     ),
     mainPanel(
       textOutput("signeastro"),
@@ -17,13 +17,18 @@ ui <- fluidPage(
       textOutput("signe_chinois"),
       h2("Voici ta compatibilité amoureuse :"),
       textOutput("compatibilite"),
-      h3 ("Voici tes traits de caractères principaux :"),
-      plotlyOutput("pie")
+      h2("Voici tes traits de caractères principaux :"),
+      plotlyOutput("pie"),
+      textOutput("horoscope"),
+      h2("Votre horoscope du jour :")
     )
   )
 )
 
+
 server <- function(input, output) {
+
+  #Connaître son signe astrologique 
   
   signe <- reactive({
     jour <- as.integer(format(input$date, "%d"))
@@ -59,7 +64,8 @@ server <- function(input, output) {
     paste ("Votre signe astrologique est : ", signe())
     })
   
-  #  Avoir la description de son signe astro
+  #Avoir la description de son signe astro
+  
   output$description <- renderText({
     jour <- as.integer(format(input$date, "%d"))
     mois <- as.integer(format(input$date, "%m"))
@@ -126,6 +132,9 @@ server <- function(input, output) {
     paste("Ton signe chinois est :", signe_chinois)
   })
 
+  
+  #Connaître sa compatibilité amoureuse
+  
   output$compatibilite <- renderText({
     compatibilite <- ""
     if (signe()=="Bélier") {
@@ -157,7 +166,7 @@ server <- function(input, output) {
   })  
   
   
-    
+  #Connaître ses traits de caractère
   
   output$pie <- renderPlotly({
     
@@ -174,8 +183,17 @@ server <- function(input, output) {
             type = "scatterpolar",
             fill = 'toself'
     )
-    # 
   })
+  
+  
+  #Horoscope
+  output$horoscope <- renderText({
+    url <- a("Google Homepage", href="https://www.google.com/")
+    output$horoscope <- renderUI({
+      paste("Votre horoscope du jour", url)
+    })
+  })
+  
   
 }
 
