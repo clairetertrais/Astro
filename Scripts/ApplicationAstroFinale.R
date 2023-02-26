@@ -19,7 +19,7 @@ ui <- fluidPage(
       textOutput("compatibilite"),
       h2("Voici tes traits de caractères principaux :"),
       plotlyOutput("pie"),
-      textOutput("horoscope"),
+      uiOutput("horoscope"),
       h2("Votre horoscope du jour :")
     )
   )
@@ -187,6 +187,7 @@ server <- function(input, output) {
   
   
   #Horoscope
+  
   output$horoscope <- renderText({
     url <- a("Google Homepage", href="https://www.google.com/")
     output$horoscope <- renderUI({
