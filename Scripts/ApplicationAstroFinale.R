@@ -189,12 +189,11 @@ server <- function(input, output) {
   #Horoscope
   
   output$horoscope <- renderText({
-    url <- a("Google Homepage", href="https://www.google.com/")
+    url <- a("Horoscope du jour", href="https://www.evozen.fr/horoscope/horoscope-du-jour")
     output$horoscope <- renderUI({
-      paste("Votre horoscope du jour", url)
+      paste("Votre horoscope du jour, cliquez sur le lien pour en savoir plus", url)
     })
   })
-  
   
 }
 
