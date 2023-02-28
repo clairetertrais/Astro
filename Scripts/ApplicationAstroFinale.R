@@ -19,8 +19,9 @@ ui <- fluidPage(
       textOutput("compatibilite"),
       h2("Voici tes traits de caractères principaux :"),
       plotlyOutput("pie"),
-      uiOutput("horoscope"),
-      h2("Votre horoscope du jour :")
+      h2("Votre horoscope du jour :"),
+      a("Horoscope du jour", href="https://www.evozen.fr/horoscope/horoscope-du-jour")
+      #uiOutput("horoscope")
     )
   )
 )
@@ -188,12 +189,12 @@ server <- function(input, output) {
   
   #Horoscope
   
-  output$horoscope <- renderText({
-    url <- a("Horoscope du jour", href="https://www.evozen.fr/horoscope/horoscope-du-jour")
-    output$horoscope <- renderUI({
-      paste("Votre horoscope du jour, cliquez sur le lien pour en savoir plus", url)
-    })
-  })
+  # output$horoscope <- renderText({
+  #   url <- a("Horoscope du jour", href="https://www.evozen.fr/horoscope/horoscope-du-jour")
+  #   output$horoscope <- renderUI({
+  #     paste("Votre horoscope du jour, cliquez sur le lien pour en savoir plus", url)
+  #   })
+  # })
   
 }
 
