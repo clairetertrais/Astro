@@ -20,12 +20,14 @@ ui <- fluidPage(
       h2("Voici tes traits de caractères principaux :"),
       plotlyOutput("pie"),
       h2("Votre horoscope du jour :"),
-      a("Horoscope du jour", href="https://www.evozen.fr/horoscope/horoscope-du-jour")
-      #uiOutput("horoscope")
+      a("Votre horoscope du jour en cliquant", href="https://www.evozen.fr/horoscope/horoscope-du-jour"),
+      h5 ("Vous allez être redirigé vers la page générale d'un site d'horoscope du jour.
+          Faites descendre votre curseur sur la page et cliquez sur votre signe astrologique pour
+          en savoir plus sur votre horoscope du jour spécifique à votre signe astrologique.
+          En espérant que vos astres soient alignés aujourd'hui.")
     )
   )
 )
-
 
 server <- function(input, output) {
 
@@ -185,16 +187,6 @@ server <- function(input, output) {
             fill = 'toself'
     )
   })
-  
-  
-  #Horoscope
-  
-  # output$horoscope <- renderText({
-  #   url <- a("Horoscope du jour", href="https://www.evozen.fr/horoscope/horoscope-du-jour")
-  #   output$horoscope <- renderUI({
-  #     paste("Votre horoscope du jour, cliquez sur le lien pour en savoir plus", url)
-  #   })
-  # })
   
 }
 
