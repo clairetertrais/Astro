@@ -19,12 +19,12 @@ ui <- fluidPage(
       textOutput("compatibilite"),
       h2("Voici tes traits de caractères principaux :"),
       plotlyOutput("pie"),
-      h2("Votre horoscope du jour :"),
-      a("Votre horoscope du jour en cliquant", href="https://www.evozen.fr/horoscope/horoscope-du-jour"),
-      h5 ("Vous allez être redirigé vers la page générale d'un site d'horoscope du jour.
-          Faites descendre votre curseur sur la page et cliquez sur votre signe astrologique pour
-          en savoir plus sur votre horoscope du jour spécifique à votre signe astrologique.
-          En espérant que vos astres soient alignés aujourd'hui.")
+      h2("L'horoscope du jour:"),
+      a("L'horoscope du jour", href="https://www.evozen.fr/horoscope/horoscope-du-jour"),
+      h5 ("Vous allez être redirigé vers la page générale d'un site d'horoscope du jour."),
+      a("Votre horoscope du jour", href="link"),
+      h5 ("Voici l'horoscope du jour associé à votre signe astrologique. En espérant que votre astres soient alignés aujourd'hui.")
+      
     )
   )
 )
@@ -186,6 +186,11 @@ server <- function(input, output) {
             type = "scatterpolar",
             fill = 'toself'
     )
+  })
+  
+  output$link <- renderUI({
+    tags$a(href = paste("https://www.evozen.fr/horoscope/horoscope-du-jour/belier", input$signeastro$Bélier), 
+           paste0("http://test.com/", input$text))
   })
   
 }
