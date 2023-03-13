@@ -189,10 +189,40 @@ server <- function(input, output) {
   })
   
   output$link <- renderUI({
-    tags$a(href = paste("https://www.evozen.fr/horoscope/horoscope-du-jour/belier", input$signeastro$Bélier), 
+    tags$a(href = paste("https://www.evozen.fr/horoscope/horoscope-du-jour/belier", Bélier), 
            paste0("http://test.com/", input$text))
   })
   
-}
+  output$link <- renderUI({
+    link <- ""
+    if (signe()=="Bélier") {
+      link <- "https://www.evozen.fr/horoscope/horoscope-du-jour/belier"
+    } else if (signe()=="Taureau") {
+      link <- "https://www.evozen.fr/horoscope/horoscope-du-jour/taureau"
+    } else if (signe()=="Gémeaux") {
+      link <- "https://www.evozen.fr/horoscope/horoscope-du-jour/gemeau"
+    } else if (signe()=="Cancer") {
+      link <- "https://www.evozen.fr/horoscope/horoscope-du-jour/cancer"
+    } else if (signe()=="Lion") {
+      link <- "https://www.evozen.fr/horoscope/horoscope-du-jour/lion"
+    } else if (signe()=="Vierge") {
+      link <- "https://www.evozen.fr/horoscope/horoscope-du-jour/vierge"
+    } else if (signe()=="Balance") {
+      link <- "https://www.evozen.fr/horoscope/horoscope-du-jour/balance"
+    } else if (signe()=="Scorpion") {
+      link <- "https://www.evozen.fr/horoscope/horoscope-du-jour/scorpion"
+    } else if (signe()=="Sagittaire") {
+      link <- "https://www.evozen.fr/horoscope/horoscope-du-jour/sagittaire"
+    } else if (signe()=="Capricorne") {
+      link <- "https://www.evozen.fr/horoscope/horoscope-du-jour/capricorne"
+    } else if (signe()=="Verseau") {
+      link <- "https://www.evozen.fr/horoscope/horoscope-du-jour/verseau"
+    } else if (signe()=="Poissons") {
+      link <- "https://www.evozen.fr/horoscope/horoscope-du-jour/poisson"
+    }
+    paste("",link)
+  })  
+    }
+  
 
 shinyApp(ui, server)
